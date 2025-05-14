@@ -1,0 +1,14 @@
+{
+  "name": "jdbc-sink-user",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "tasks.max": "1",
+    "topics": "user-topic",
+    "connection.url": "jdbc:postgresql://pgdb:5432/usersdb",
+    "connection.user": "user",
+    "connection.password": "pass",
+    "auto.create": "true",
+    "auto.evolve": "true",
+    "insert.mode": "insert"
+  }
+}
